@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cop4656.jrdbnntt.com.groupproject1">
+
+    <permission android:name="cop4656.jrdbnntt.com.groupproject1.permission.READ_PERMISSION" />
+    <permission android:name="cop4656.jrdbnntt.com.groupproject1.permission.WRITE_PERMISSION" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <provider
+            android:name=".provider.MyContentProvider"
+            android:authorities="cop4656.jrdbnntt.com.groupproject1.provider"
+            android:enabled="true"
+            android:exported="true"
+            android:readPermission="cop4656.jrdbnntt.com.groupproject1.permission.READ_PERMISSION"
+            android:writePermission="cop4656.jrdbnntt.com.groupproject1.permission.WRITE_PERMISSION" />
+
+
+        <receiver android:name=".WidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info"/>
+        </receiver>
+
+
+
+        <receiver
+            android:name=".CourseAlarmReceiver"
+            android:enabled="true">
+        </receiver>
+
+        <service android:name=".WidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+            android:enabled="true"/>
+
+        <activity
+            android:name=".AddNewCourseActivity"
+            android:label="@string/add_course"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".NavigateToCourseActivity"
+            android:label="@string/navigate"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".CoursesListActivity"
+            android:label="@string/schedule"
+            android:theme="@style/AppThemeMaterial"/>
+        <activity
+            android:name=".PreferencesActivity"
+            android:label="@string/preferences"
+            android:theme="@style/AppThemeMaterial"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

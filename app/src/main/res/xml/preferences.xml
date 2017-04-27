@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="@string/alarmBufferDefaultEntry"
+        android:entries="@array/alarmBufferEntries"
+        android:entryValues="@array/alarmBufferEntryValues"
+        android:key="@string/alarmBufferKey"
+        android:summary="@string/alarmBufferSummary"
+        android:title="@string/alarmBufferTitle" />
+    <ListPreference
+        android:defaultValue="@string/parkingLocationDefaultValue"
+        android:entries="@array/parkingLocationEntries"
+        android:entryValues="@array/parkingLocationEntries"
+        android:key="@string/parkingLocationKey"
+        android:summary="@string/parkingLocationSummary"
+        android:title="@string/parkingLocationTitle" />
+</PreferenceScreen>

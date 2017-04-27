@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/iViewSchedule" android:title="@string/view_schedule"/>
+    <item android:id="@+id/iAddCourse" android:title="@string/add_course"/>
+    <item android:id="@+id/iPreferences" android:title="@string/my_preferences"/>
+</menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- alarmBuffer -->
+    <string name="alarmBufferDefaultEntry">30 minutes</string>
+    <string-array name="alarmBufferEntries">
+        <item>1 minute</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+    <string-array name="alarmBufferEntryValues">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+    </string-array>
+    <string name="alarmBufferSummary">Minutes before class for alert</string>
+    <string name="alarmBufferKey">alarmBuffer</string>
+    <string name="alarmBufferTitle">Alarm Buffer</string>
+
+
+    <!-- parkingLocation -->
+    <string name="parkingLocationSummary">Parking location used in travel time estimates</string>
+    <string name="parkingLocationKey">parkingLocation</string>
+    <string name="parkingLocationTitle">Preferred Parking Location</string>
+    <string name="parkingLocationDefaultValue">Woodward Garage</string>
+    <string-array name="parkingLocationEntries">
+        <item>Woodward Garage</item>
+        <item>Call Street Garage</item>
+        <item>Traditions Garage</item>
+        <item>St Augustine Garage</item>
+        <item>Pensacola St Garage</item>
+        <item>Spirit Way Garage</item>
+    </string-array>
+</resources>

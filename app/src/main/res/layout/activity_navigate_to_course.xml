@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="85dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Estimated travel time:"
+        android:textSize="25sp"
+        android:layout_below="@+id/building"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/insertText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/timeText"
+        android:layout_alignBottom="@+id/timeText"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/timeText"
+        android:text="*time goes here*"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/nextCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/building"
+        android:layout_marginTop="27dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Course:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/cN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/nextCourse"
+        android:layout_alignStart="@+id/insertText"
+        android:text="*course number*"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/building"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/timeText"
+        android:layout_below="@+id/nextCourse"
+        android:layout_marginTop="22dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Course location:"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/rN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/building"
+        android:layout_alignStart="@+id/insertText"
+        android:text="*building*"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/nav"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:text="Navigate!"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/courseTime"
+        android:onClick="navButton"/>
+
+    <TextView
+        android:id="@+id/courseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Course time:"
+        android:textSize="25sp"
+        android:layout_below="@+id/building"
+        android:layout_alignStart="@+id/timeText" />
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/courseTime"
+        android:layout_alignStart="@+id/insertText"
+        android:text="*time*"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="@string/app_name"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/bAddCourse"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@color/common_google_signin_btn_text_light_default"
+        android:text="@string/add_course"
+        android:layout_toStartOf="@id/space"
+        android:layout_alignBottom="@id/space"/>
+
+    <Button
+        android:id="@+id/bViewSchedule"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@color/common_google_signin_btn_text_light_default"
+        android:text="@string/view_schedule"
+        android:layout_toEndOf="@id/space"
+        android:layout_alignBottom="@id/space"/>
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/location"
+        android:padding="20dp"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/tvAppName"
+        android:layout_above="@id/bAddCourse"/>
+
+
+
+
+</RelativeLayout>
+
+
