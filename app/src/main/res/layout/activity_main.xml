@@ -12,8 +12,7 @@
         android:textSize="50sp"
         android:textStyle="bold"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_centerHorizontal="true" />
 
     <Space
         android:id="@+id/space"
@@ -43,17 +42,20 @@
         android:layout_toEndOf="@id/space"
         android:layout_alignBottom="@id/space"/>
 
-    <ImageView
-        android:id="@+id/ivLogo"
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/twitter_login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/location"
-        android:padding="20dp"
-        android:layout_centerVertical="true"
-        android:layout_below="@id/tvAppName"
-        android:layout_above="@id/bAddCourse"/>
+        android:layout_centerInParent="true"/>
 
-
+    <Button
+        android:id="@+id/postTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bViewSchedule"
+        android:layout_alignStart="@+id/bViewSchedule"
+        android:layout_marginBottom="50dp"
+        android:text="Post Tweet" />
 
 
 </RelativeLayout>

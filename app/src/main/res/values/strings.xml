@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NavigateU</string>
+    <string name="app_name">Map o Shame</string>
     <string name="permission_READ">cop4656.jrdbnntt.com.groupproject1.permission.READ_PERMISSION</string>
     <string name="permission_WRITE">cop4656.jrdbnntt.com.groupproject1.permission.WRITE_PERMISSION</string>
     <string name="action_ALARM">cop4656.jrdbnntt.com.groupproject1.action.ALARM</string>
@@ -221,4 +221,5 @@
     <string name="courses">Courses:</string>
     <string name="today_s_classes"><u>Today\'s Classes</u></string>
     <string name="view_full_schedule">View Full Schedule</string>
+    <string name="title_activity_shame">ShameActivity</string>
 </resources>

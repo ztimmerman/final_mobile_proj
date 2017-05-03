@@ -49,7 +49,7 @@ public class AddNewCourseActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (submitNewCourse()) {
-                    startActivity(new Intent(getApplicationContext(), CoursesListActivity.class));
+                   // startActivity(new Intent(getApplicationContext(), CoursesListActivity.class));
                 }
             }
         });
